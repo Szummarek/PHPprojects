@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    background-image: url('background.png');
+}
+
+
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    background-image: url('header.png');
+    height: 20%;
+}
+
+#logo {
+    width: 900px;
+    position: relative;
+    height: 168px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logotext h1 .bluetext {
+    color: #1293EE;
+}
+#logotext {
+    position: absolute;
+    top: 20px;
+    color: white;
+}
+
+#navmenu ul {
+    display: flex;
+}
+
+#navmenu {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 70px;
+    padding: 0;
+    background: #1293EE;
+}
+.active{
+    background-color: #0D66A5;
+}
+
+#menu {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    float: left;
+    display: inline-block;
+
+}
+h1, h3, h4, h5 {
+	padding: 0 0 15px 0;
+}
+
+#menu li{
+    margin-top: 25px;
+}
+#menu li a {
+
+    padding: 25.5px 26px 27px 26px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 150px;
+    color:white;
+
+}
+#menu li a:hover {
+	background-color: #0D66A5
+}
+
+.clear_both{
+    clear:both;
+}
+
+.submit {
+	margin: 10px 0px;
+	background-color: #1293EE;
+	height: 33px;
+	width: 80px;
+	color: white;
+}
+.message {
+	line-height: 22px;
+}
+
+
+
+.input {
+	width: 340px;
+	margin: 0 0 0 25px;
+}
+
+
+
+
+#asidebar {
+    width: 900px;
+    overflow: hidden;
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+#content{
+    display: block;
+    float: left;
+    height: 575px;
+    width:75%;
+}
+
+#rightbar {
+    display: block;
+    width: 25%;
+    padding: 0 15px 20px 15px;
+
+}
+h4 {
+ 	color:#1293EE;
+}
+
+.rightbar  a {
+	color:#FD5BFF;
+}
+
+.left-txt{
+    padding-left: 25px;
+}
+
+.down {
+	list-style-image: url(link.png);
+}
+
+
+
+#footer {
+    width: 900px;
+    height: 33px;
+    padding: 20px 0;
+    text-align: center;
+    background: #1293EE;
+    color: white;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+}

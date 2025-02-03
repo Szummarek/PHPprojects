@@ -1,0 +1,150 @@
+body{
+  background: #333;
+  margin: 0;
+  padding: 0;
+  color:#fff;
+}
+/* identyfikator centrowanie dodalem zeby
+   był pasek niebieski w tle menu na calej szerokosci
+   strony. Da to fajny efekt aby ostatni element
+   menu Hobby, nie wystawal poza 
+*/
+.centrowanie {
+  width:800px;
+  margin:0 auto;
+}
+/* odsunąłem elementu menu pierwszego poziomu
+   od prawej strony o 30px
+*/
+
+nav {
+  position:relative;
+  right:30px;
+}
+
+header{
+  background: #4287f5;
+  border-bottom: 3px solid #fff;
+  height: 69px;
+  position: relative;
+}
+
+header h1 {
+  padding-left: 10px;
+  margin:0;
+  display: block;
+  float:left;
+  position:absolute;
+  /* dwa poniższe wiersze dadzą centrowanie w pionie */
+  top:50%;
+  transform: translateY(-50%);
+}
+
+/*menu pierwszego poziomu */
+
+header .menu{
+  list-style-type: none;
+  float: right;
+
+  margin:0;
+  z-index:2;
+}
+header .menu li{
+  display:block;
+  float:left;
+  position:relative;
+
+}
+header .menu a {
+  display:block;
+  text-decoration: none;
+  color:#fff;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  transition: all 0.4s ease;
+}
+
+header .menu a:hover{
+  color: #333;
+  background-color: #fff;
+} 
+
+/*menu drugiego poziomu */
+
+header .submenu{
+  position: absolute;
+  top:69px;
+  padding:0;
+  height: 0;
+}
+
+header .submenu li {
+  width:100%;
+  height:0;
+  opacity:0;
+  background-color: #4287f5;
+  transition: height 0.5s ease 0.2s opacity 0.5s ease;
+}
+header li:hover .submenu > li {
+  height: 4rem;
+  opacity:1;
+  /*dodałem borde do lewej krawiedzi dla 2-go poziomu 
+  teraz fajnie sie te linie łaczą - pozioma z menu oraz pioznowa
+  z właśnie poziomu drugiego
+  */
+  border-left: 2px solid #fff;
+}
+header .submenu a {
+  line-height: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0rem;
+  visibility: hidden;
+}
+header li:hover .submenu a {
+  visibility: visible;
+}
+/* trzeci poziom menu */
+
+header .sub-submenu {
+  position:absolute;
+  left:11rem;
+  /* ewentualnie jak chce 3 poziom po lewej to
+  right:11rem; wtedy left:11rem; trzeba zakomentować
+  */
+  top:1rem;
+  padding:0;
+}
+header .submenu li .sub-submenu li {
+  height:0;
+  opacity: 0;
+  background-color: #4287f5;
+  z-index: 3;
+}
+
+header .submenu li:hover .sub-submenu li {
+  height: 4rem;
+  opacity: 1;
+  border-left: 2px solid #fff;
+}
+header .submenu li .sub-submenu:hover li {
+  z-index: 4;
+}
+
+/* tresc strony 
+dodałem tutaj linię pod h1
+a w HTML wewnatrz sekcji content ująłem w sekcję centrowanie wszystko, 
+aby treści tez były wyśrodkowane jak logo i menu
+*/
+
+.content {
+  margin-top:2rem;
+}
+
+.content p {
+  text-align: justify;
+  margin-bottom: 3em;
+}
+.content h1 {
+  line-height: 2em;
+  border-bottom:2px solid #fff;
+}
