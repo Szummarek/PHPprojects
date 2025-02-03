@@ -1,0 +1,56 @@
+body {
+    background-color: #aabae5;
+}
+
+
+#container {
+    width: 100%;
+    height: auto;
+}
+
+#menu {
+    display: block;
+    text-align: center;
+    width: 40%;
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 20px;
+    background-color: #ccd4e8;
+}
+
+#game {
+    display: block;
+    text-align: center;
+    width: 40%;
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 20px;
+    background-color: #ccd4e8;
+}
+
+table {
+    margin: 20px auto;
+    border: 2px solid #e64c66;
+    border-radius: 10px;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #a6162d;
+    border-radius: 10px;
+}
+
+#result {
+    height: 50px;
+    text-align: center;
+}
+
+.tdColor {
+    background-color: #ff94a6;
+}
+
+.hidden {
+    background-color: white;
+}
+
