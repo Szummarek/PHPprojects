@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+* {
+    font-family: 'Oswald';
+}
+body {
+    width:990px;
+    margin:10px auto;
+    background:#4b4b5b;
+}
+#baner {
+    background-image: url('../images/baner.jpg');
+    width:990px;
+    height:170px;
+    margin-bottom:15px;
+}
+#menu {
+  background-color: #1b1b2b;
+}
+#main {
+    clear:both;
+    margin-top:15px;
+}
+#left {
+    width:250px;
+    /*background-color: rgba(120,110,250,1);*/
+}
+#right {
+    width:720px;
+    background-color: rgba(230,230,230,0.7);
+    margin-bottom: 15px;
+}
+#left,#right {
+    float:left;
+    min-height:400px;
+    padding:0 10px 15px 0;
+    
+}
+#footer {
+    clear:both;
+    height:60px;
+    background-color: rgba(230,230,230,0.7);
+    padding:15px 10px;
+}
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    display: inline;
+    position: relative;
+}
+
+#menu ul ul {
+    display: none;
+}
+
+#menu ul li:hover ul{
+    display: inline-block;
+    position:absolute;
+    left:0px;
+    top:33px;
+}
+#menu a{
+  display:inline-block;
+  min-width:150px;
+  color:#bbb;
+  background:#1b1b2b;
+  padding:10px 10px;
+  font-size:14px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  border-left:1px dashed #bbb;
+  transition: 0.2s ease-in-out;
+}
+
+#menu a:hover{
+  border:none;
+  background:#fff;
+  color:#1b1b1b;
+  transition: 0.3s ease-in-out;
+  border-left:1px dashed #1b1b4b;
+}
+#menu a::before {
+  content: ':: ';
+}
+#menu ul ul a {
+  background-color:#4b4b8b;
+  color:#fff;
+  border-left:1px dashed #1b1b4b;
+}
+
+h3,h2 {
+  margin:0;
+}
+
+input{
+  border:none;
+  background-color: rgba(40,40,40,1);
+  border-bottom: 1px solid #bbb;
+  width:calc(100% - 10px);
+  font-family: 'Oswald';
+  font-size: 14px;
+  padding: 6px 0 6px 10px;
+  color:#fff;
+}
+
+.header {
+  color:#fff;
+  background-color: #2b2b4b;
+  padding:5px 5px 5px 10px;
+  letter-spacing: 2px;
+}
+
+.panel{
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+  padding:8px;
+  color:#fff;
+  min-height: 300px;
+}
+input[type=submit] {
+  padding:6px 0;
+  width:100%;
+  transition: 0.2s ease;
+  background-color: rgba(0,0,0,1);
+}
+input[type=submit]:hover {
+  padding:6px 0;
+  width:100%;
+  background-color: #fff;
+  color:red;
+  cursor: pointer;
+}
+
+.fa-exclamation-triangle {
+  color:orange;
+}
+
+a{
+  color:#fff;
+  text-decoration: none;
+  padding-left: 10px;
+}
+a:hover {
+  color:red;
+}
+ul {
+  list-style:none;
+  padding: 0;
+  margin:10px;
+}
+p {
+  margin:0;
+}
+.panel p {
+  margin:10px 0;
+}
